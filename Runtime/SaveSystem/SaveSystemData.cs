@@ -57,15 +57,7 @@ namespace Cradaptive.SaveSystem
             cache[key] = value;
             this.SaveData();
         }
-
-        public void RegisterWithSaveSystem(ISaveComponent saveData)
-        {
-            if (!componentsWithSaveSupport.ContainsKey(saveData.SaveData.saveKey))
-            {
-                componentsWithSaveSupport.Add(saveData.SaveData.saveKey,saveData);
-            }
-        }
-
+        
         public void ResetData()
         {
             cache = new Dictionary<string, string>();

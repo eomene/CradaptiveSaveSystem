@@ -11,7 +11,7 @@ namespace Cradaptive.SaveSystem
         {
             if (saveSystem.cache == null) return;
             string dataToSave = JsonConvert.SerializeObject(saveSystem.cache);
-            Debug.LogError($"Saving data {saveSystem.saveKey} with key {dataToSave}");
+//            Debug.LogError($"Saving data {saveSystem.saveKey} with key {dataToSave}");
             PlayerPrefs.SetString(saveSystem.saveKey, dataToSave);
         }
 
@@ -20,7 +20,7 @@ namespace Cradaptive.SaveSystem
         {
             saveSystem.ResetData();
             string json = PlayerPrefs.GetString(saveSystem.saveKey);
-            Debug.LogError($"Loading data {saveSystem.saveKey} with key {json}");
+          //  Debug.LogError($"Loading data {saveSystem.saveKey} with key {json}");
             if (!string.IsNullOrEmpty(json))
             {
                 var data = JsonConvert.DeserializeObject<T>(json);
