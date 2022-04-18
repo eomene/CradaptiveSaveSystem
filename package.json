@@ -1,0 +1,11 @@
+{
+  "name": "cradaptive.cradaptivesavesystem",
+  "version": "0.0.1",
+  "displayName": "Cradaptive Save System",
+  "description": "A simple way to handle web textures in Unity",
+  "unity": "2020.2",
+  "author": {
+    "name": "Cradaptive"
+  },
+  "type": "tool"
+}
